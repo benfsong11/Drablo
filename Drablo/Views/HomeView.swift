@@ -17,7 +17,7 @@ struct HomeView: View {
                 .navigationBarTitle("Drablo")
                 .navigationBarItems(leading: Button("설정") {
                     showingSheet.toggle()
-                }.sheet(isPresented: self.$showModal) {
+                }.sheet(isPresented: self.$showingSheet) {
                     SettingView()
                 }, trailing: Button(action: {
                     self.showModal = true
