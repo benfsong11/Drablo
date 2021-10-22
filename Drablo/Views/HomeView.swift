@@ -13,9 +13,7 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                Text("이것은 홈 피드입니다.")
-            }
+            Text("이것은 홈 피드입니다.")
                 .navigationBarTitle("Drablo")
                 .navigationBarItems(leading: Button("설정") {
                     showingSheet.toggle()

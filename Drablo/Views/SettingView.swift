@@ -12,7 +12,14 @@ struct SettingView: View {
     
     var body: some View {
         NavigationView {
-            Text("이것은 설정 화면입니다.")
+            List {
+                NavigationLink(destination: Text("이것은 닉네임 설정 화면입니다.")) {
+                    Text("닉네임")
+                }
+                NavigationLink(destination: Text("이것은 상태 메시지 설정 화면입니다.")) {
+                    Text("상태 메시지")
+                }
+            }
                 .navigationTitle("설정")
                 .navigationBarItems(trailing: Button("완료") {
                     self.mode.wrappedValue.dismiss()
