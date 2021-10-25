@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,11 @@
 		771AAC112722F40100EFCE17 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AAC102722F40100EFCE17 /* NotificationView.swift */; };
 		771AAC132722F58800EFCE17 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AAC122722F58800EFCE17 /* CreateView.swift */; };
 		771AAC152722F82000EFCE17 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AAC142722F82000EFCE17 /* SettingView.swift */; };
+		7755739C2726B50700DE5AC1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7755739B2726B50700DE5AC1 /* LoginView.swift */; };
+		7755739E2726BA1D00DE5AC1 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7755739D2726BA1D00DE5AC1 /* MainPageView.swift */; };
+		775573A02726E73400DE5AC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7755739F2726E73400DE5AC1 /* GoogleService-Info.plist */; };
+		775573A22726E9A000DE5AC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775573A12726E9A000DE5AC1 /* AppDelegate.swift */; };
+		FF3E7BCE50EDF5860E9B253F /* Pods_Drablo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29D6DBB577666B66289B71F /* Pods_Drablo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,13 @@
 		771AAC102722F40100EFCE17 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		771AAC122722F58800EFCE17 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		771AAC142722F82000EFCE17 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		7755739B2726B50700DE5AC1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7755739D2726BA1D00DE5AC1 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		7755739F2726E73400DE5AC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		775573A12726E9A000DE5AC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A04B408A2B650B89F05C151F /* Pods-Drablo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drablo.release.xcconfig"; path = "Target Support Files/Pods-Drablo/Pods-Drablo.release.xcconfig"; sourceTree = "<group>"; };
+		A11175F5ED6306CFD1B6A698 /* Pods-Drablo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drablo.debug.xcconfig"; path = "Target Support Files/Pods-Drablo/Pods-Drablo.debug.xcconfig"; sourceTree = "<group>"; };
+		F29D6DBB577666B66289B71F /* Pods_Drablo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drablo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3E7BCE50EDF5860E9B253F /* Pods_Drablo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081D42CC14D569BA0DF84F74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F29D6DBB577666B66289B71F /* Pods_Drablo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76729FEAF04B69DD28801394 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A11175F5ED6306CFD1B6A698 /* Pods-Drablo.debug.xcconfig */,
+				A04B408A2B650B89F05C151F /* Pods-Drablo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		771AABEE2722BBC200EFCE17 = {
 			isa = PBXGroup;
 			children = (
 				771AABF92722BBC200EFCE17 /* Drablo */,
 				771AABF82722BBC200EFCE17 /* Products */,
+				76729FEAF04B69DD28801394 /* Pods */,
+				081D42CC14D569BA0DF84F74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,11 +96,13 @@
 		771AABF92722BBC200EFCE17 /* Drablo */ = {
 			isa = PBXGroup;
 			children = (
+				7755739F2726E73400DE5AC1 /* GoogleService-Info.plist */,
 				771AABFA2722BBC200EFCE17 /* DrabloApp.swift */,
 				771AABFE2722BBC400EFCE17 /* Assets.xcassets */,
 				771AAC092722E97600EFCE17 /* Views */,
 				771AAC032722BBC400EFCE17 /* Info.plist */,
 				771AAC002722BBC400EFCE17 /* Preview Content */,
+				775573A12726E9A000DE5AC1 /* AppDelegate.swift */,
 			);
 			path = Drablo;
 			sourceTree = "<group>";
@@ -91,6 +125,8 @@
 				771AAC102722F40100EFCE17 /* NotificationView.swift */,
 				771AAC122722F58800EFCE17 /* CreateView.swift */,
 				771AAC142722F82000EFCE17 /* SettingView.swift */,
+				7755739B2726B50700DE5AC1 /* LoginView.swift */,
+				7755739D2726BA1D00DE5AC1 /* MainPageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 771AAC062722BBC400EFCE17 /* Build configuration list for PBXNativeTarget "Drablo" */;
 			buildPhases = (
+				9BB0235DA9D58DCF686C97E9 /* [CP] Check Pods Manifest.lock */,
 				771AABF32722BBC200EFCE17 /* Sources */,
 				771AABF42722BBC200EFCE17 /* Frameworks */,
 				771AABF52722BBC200EFCE17 /* Resources */,
+				4B07BBAD44AE45DB5D3C568A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,19 +192,65 @@
 			files = (
 				771AAC022722BBC400EFCE17 /* Preview Assets.xcassets in Resources */,
 				771AABFF2722BBC400EFCE17 /* Assets.xcassets in Resources */,
+				775573A02726E73400DE5AC1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B07BBAD44AE45DB5D3C568A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Drablo/Pods-Drablo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Drablo/Pods-Drablo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Drablo/Pods-Drablo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BB0235DA9D58DCF686C97E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Drablo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		771AABF32722BBC200EFCE17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775573A22726E9A000DE5AC1 /* AppDelegate.swift in Sources */,
 				771AAC0F2722EDD900EFCE17 /* SearchView.swift in Sources */,
 				771AAC0D2722ED4100EFCE17 /* MyFeedView.swift in Sources */,
+				7755739E2726BA1D00DE5AC1 /* MainPageView.swift in Sources */,
 				771AAC0B2722E99300EFCE17 /* HomeView.swift in Sources */,
+				7755739C2726B50700DE5AC1 /* LoginView.swift in Sources */,
 				771AABFD2722BBC200EFCE17 /* ContentView.swift in Sources */,
 				771AAC132722F58800EFCE17 /* CreateView.swift in Sources */,
 				771AAC152722F82000EFCE17 /* SettingView.swift in Sources */,
@@ -296,11 +380,13 @@
 		};
 		771AAC072722BBC400EFCE17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11175F5ED6306CFD1B6A698 /* Pods-Drablo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Drablo/Preview Content\"";
+				DEVELOPMENT_TEAM = 98CQY56GUZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Drablo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -317,11 +403,13 @@
 		};
 		771AAC082722BBC400EFCE17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A04B408A2B650B89F05C151F /* Pods-Drablo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Drablo/Preview Content\"";
+				DEVELOPMENT_TEAM = 98CQY56GUZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Drablo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
