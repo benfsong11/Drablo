@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		770692712728FF070085403D /* SetNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770692702728FF070085403D /* SetNicknameView.swift */; };
 		770692732728FFFA0085403D /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770692722728FFFA0085403D /* UserSettings.swift */; };
+		77069275272940B10085403D /* SetStatusMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77069274272940B10085403D /* SetStatusMessageView.swift */; };
+		77069277272940D50085403D /* StatusMessageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77069276272940D50085403D /* StatusMessageSettings.swift */; };
 		771AABFB2722BBC200EFCE17 /* DrabloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AABFA2722BBC200EFCE17 /* DrabloApp.swift */; };
 		771AABFD2722BBC200EFCE17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AABFC2722BBC200EFCE17 /* ContentView.swift */; };
 		771AABFF2722BBC400EFCE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771AABFE2722BBC400EFCE17 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		770692702728FF070085403D /* SetNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNicknameView.swift; sourceTree = "<group>"; };
 		770692722728FFFA0085403D /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		77069274272940B10085403D /* SetStatusMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStatusMessageView.swift; sourceTree = "<group>"; };
+		77069276272940D50085403D /* StatusMessageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMessageSettings.swift; sourceTree = "<group>"; };
 		771AABF72722BBC200EFCE17 /* Drablo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drablo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		771AABFA2722BBC200EFCE17 /* DrabloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrabloApp.swift; sourceTree = "<group>"; };
 		771AABFC2722BBC200EFCE17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 				771AAC002722BBC400EFCE17 /* Preview Content */,
 				775573A12726E9A000DE5AC1 /* AppDelegate.swift */,
 				770692722728FFFA0085403D /* UserSettings.swift */,
+				77069276272940D50085403D /* StatusMessageSettings.swift */,
 			);
 			path = Drablo;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 				7755739B2726B50700DE5AC1 /* LoginView.swift */,
 				7755739D2726BA1D00DE5AC1 /* MainPageView.swift */,
 				770692702728FF070085403D /* SetNicknameView.swift */,
+				77069274272940B10085403D /* SetStatusMessageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 				771AABFD2722BBC200EFCE17 /* ContentView.swift in Sources */,
 				771AAC132722F58800EFCE17 /* CreateView.swift in Sources */,
 				771AAC152722F82000EFCE17 /* SettingView.swift in Sources */,
+				77069277272940D50085403D /* StatusMessageSettings.swift in Sources */,
 				770692712728FF070085403D /* SetNicknameView.swift in Sources */,
+				77069275272940B10085403D /* SetStatusMessageView.swift in Sources */,
 				771AABFB2722BBC200EFCE17 /* DrabloApp.swift in Sources */,
 				771AAC112722F40100EFCE17 /* NotificationView.swift in Sources */,
 			);

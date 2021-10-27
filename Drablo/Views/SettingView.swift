@@ -11,15 +11,20 @@ import Firebase
 struct SettingView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
+    // navigationBatTitle과 Form 사이의 거리를 없애 주는 코드
+    init() {
+        UITableView.appearance().sectionHeaderHeight = .zero
+    }
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
                 Form {
                     Section {
                         NavigationLink(destination: SetNicknameView()) {
-                            Text("닉네임")
+                            Text("사용자 이름")
                         }
-                        NavigationLink(destination: Text("이것은 상태 메시지 설정 화면입니다.")) {
+                        NavigationLink(destination: SetStatusMessageView()) {
                             Text("상태 메시지")
                         }
                     }

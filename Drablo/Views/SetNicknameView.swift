@@ -13,12 +13,13 @@ struct SetNicknameView: View {
     var body: some View {
         UITextField.appearance().clearButtonMode = .whileEditing
         return Form {
-            Section(footer: Text("사용 가능한 닉네임입니다.")) {
+            Section(footer: Text("사용 가능한 사용자 이름입니다.")) {
                 TextField("최대 16글자", text: $userSettings.username)
                     .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                    .keyboardType(.alphabet)
             }
         }
-        .navigationBarTitle("닉네임", displayMode: .inline)
+        .navigationBarTitle("사용자 이름", displayMode: .inline)
     }
 }
 
