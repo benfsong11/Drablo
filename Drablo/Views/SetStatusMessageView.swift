@@ -14,8 +14,9 @@ struct SetStatusMessageView: View {
         UITextField.appearance().clearButtonMode = .whileEditing
         return Form {
             Section(footer: Text("오늘 당신의 기분을 표현해 보세요!")) {
-                TextField("최대 100글자", text: $statusMessageSettings.statusMessage)
-                    .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)            }
+                TextField("최대 30글자", text: $statusMessageSettings.statusMessage)
+                    .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+            }
         }
         .navigationBarTitle("상태 메시지", displayMode: .inline)
     }

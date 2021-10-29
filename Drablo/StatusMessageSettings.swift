@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class StatusMessageSettings: ObservableObject {
-    var messageLimit: Int = 100
+    var messageLimit: Int = 30
     
     @Published var statusMessage: String {
         didSet {
